@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+  $valorA = 1;
+  $valorB = 5;
+  $valorC = 4;
+  $response = null;
+  
+  
+  function segundoGrau($valorA, $valorB, $valorC){
+      $valorDelta = ($valorB *$valorB) - ((4*$valorA)*$valorC);
+      //var_dump($valorDelta);die;
+      if($valorDelta < 0){
+        $response = "Não existem raízes";
+      } else if ($valorDelta == 0){
+        $x = (-$valorB + sqrt($valorDelta)) / (2*$valorA);
+        $response = "O valor da raíz é ".$x.'.';
+      } else{
+         $x1 = (-$valorB + sqrt($valorDelta)) / (2*$valorA);
+         $x2 = (-$valorB - sqrt($valorDelta)) / (2*$valorA);
+         
+        $response = "O Valor das raízes são: ".$x1. ' e '.$x2.'.';
+      }
+      return $response;
+  }
+  echo segundoGrau($valorA, $valorB, $valorC);
+?>
+
+</body>
+</html>
