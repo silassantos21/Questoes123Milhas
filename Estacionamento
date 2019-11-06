@@ -1,10 +1,10 @@
 <?php
 
 class Estacionamento{
-	public $vagas;
-    public $tempo;//Em minutos
-  	public $preco;
-    public $veiculo;
+    private $vagas;
+    private $tempo;//Em minutos
+    private $preco;
+    private $veiculo;
   
   public function haVagas() {
   	//Avisa se ainda há vagas no estacionamento
