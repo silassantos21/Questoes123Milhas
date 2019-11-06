@@ -1,0 +1,31 @@
+<?php
+
+class Estacionamento{
+	public $vagas;
+    public $tempo;//Em minutos
+  	public $preco;
+    public $veiculo;
+  
+  public function haVagas() {
+  	//Avisa se ainda há vagas no estacionamento
+  }
+  
+  public function tipoVeiculo{
+  	//informa o veículo
+  }
+  
+  public function tempoEstacionado{
+    //Define quanto vai ser pago, dependendo do tempo e do veículo
+  }
+  
+  public function precoFinal{
+  	//Preço Final Calculado
+  }
+}
+  
+$estacionamento = new Estacionamento;
+$estacionamento->haVagas();
+$estacionamento->tipoVeiculo();
+$estacionamento->tempoEstacionado();
+$estacionamento->precoFinal();
+?>
