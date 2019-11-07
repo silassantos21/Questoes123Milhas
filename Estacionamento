@@ -6,6 +6,13 @@ class Estacionamento{
     private $preco;
     private $veiculo;
   
+  public function __construct(
+    int $vagas,
+    int $tempo,
+    float $preco,
+    string $veiculo
+  )
+  
   public function haVagas() {
   	//Avisa se ainda há vagas no estacionamento
   }
